@@ -65,8 +65,8 @@
 		<div class="container text-center">
 			<div class="row">
 				<div class="col-lg-12">
-					<h1>Blog</h1>
-						<p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+					<h1>Pumpkin Soup with Walnut Crispies</h1>
+						<p>It’s lush, it’s beautiful, it’s creamy Pumpkin Soup with Walnut Crispies!</p>
 				</div>
 			</div>
 		</div>
@@ -84,7 +84,7 @@
 								<img class="img-fluid" style = "width: 900px; height: 500px;" src="images/walnut crisps.jpg" alt="">
 							</div>
 							<div class="inner-blog-detail details-page">
-								<h3>Pumpkin Soup with Walnut Crispies</h3>
+								<h3 style="text-transform: uppercase;">Pumpkin Soup with Walnut Crispies</h3>
 								<ul>
 									<li><i class="zmdi zmdi-account"></i>Posted By : <span>Neha Verma</span></li>
 									<li>|</li>
@@ -183,6 +183,7 @@
 							</div>
 						</div>
 						<div class="comment-respond-box">
+							<div id="alert_placeholder"></div>
 							<h3>Leave your comment </h3>
 							<div class="comment-respond-form">
 								<form id="commentrespondform" class="comment-form-respond row" method="post">
@@ -200,7 +201,7 @@
 										</div>
 									</div>
 									<div class="col-lg-12 col-md-12 col-sm-12">
-										<button class="btn btn-submit">Submit comment</button>
+										<button class="btn btn-submit" onclick="sendmessage()">Submit comment</button>
 									</div>
 								</form>
 							</div>
@@ -235,11 +236,11 @@
 									</div>
 									<div class="recent-info">
 										<ul>
-											<li><i class="zmdi zmdi-account"></i>Posted By : <span>Rubel Ahmed</span></li>
+											<li><i class="zmdi zmdi-account"></i>Posted By : <span>Amit Kumar</span></li>
 											<li>|</li>
-											<li><i class="zmdi zmdi-time"></i>Time : <span>11:30 AM</span></li>
+											<li><i class="zmdi zmdi-time"></i>Time : <span>9:36 AM</span></li>
 										</ul>
-										<h4>Duis feugiat neque sed dolor cursus, sed lacinia nisl pretium.</h4>
+										<h4>A VEGAN FRENCH CASSOULET INSPIRED FROM THE BOROUGH MARKET</h4>
 									</div>
 								</div>
 								<div class="recent-box-blog">
@@ -248,11 +249,11 @@
 									</div>
 									<div class="recent-info">
 										<ul>
-											<li><i class="zmdi zmdi-account"></i>Posted By : <span>Rubel Ahmed</span></li>
+											<li><i class="zmdi zmdi-account"></i>Posted By : <span>Shreyash Joshi</span></li>
 											<li>|</li>
-											<li><i class="zmdi zmdi-time"></i>Time : <span>11.30 am</span></li>
+											<li><i class="zmdi zmdi-time"></i>Time : <span>11:30 am</span></li>
 										</ul>
-										<h4>Duis feugiat neque sed dolor cursus, sed lacinia nisl pretium.</h4>
+										<h4>MARINATED PANEER TOAST WITH SOME NATIVE AUSTRALIAN INGREDIENTS</h4>
 									</div>
 								</div>
 								<div class="recent-box-blog">
@@ -261,11 +262,11 @@
 									</div>
 									<div class="recent-info">
 										<ul>
-											<li><i class="zmdi zmdi-account"></i>Posted By : <span>Rubel Ahmed</span></li>
+											<li><i class="zmdi zmdi-account"></i>Posted By : <span>Tanaya Verma</span></li>
 											<li>|</li>
-											<li><i class="zmdi zmdi-time"></i>Time : <span>11:30 AM</span></li>
+											<li><i class="zmdi zmdi-time"></i>Time : <span>5:30 PM</span></li>
 										</ul>
-										<h4>Duis feugiat neque sed dolor cursus, sed lacinia nisl pretium.</h4>
+										<h4>EASY RECIPE FOR A HOMEMADE GRANOLA</h4>
 									</div>
 								</div>
 								<div class="recent-box-blog">
@@ -274,11 +275,11 @@
 									</div>
 									<div class="recent-info">
 										<ul>
-											<li><i class="zmdi zmdi-account"></i>Posted By : <span>Rubel Ahmed</span></li>
+											<li><i class="zmdi zmdi-account"></i>Posted By : <span>Sneha Dash</span></li>
 											<li>|</li>
-											<li><i class="zmdi zmdi-time"></i>Time : <span>11:30 AM</span></li>
+											<li><i class="zmdi zmdi-time"></i>Time : <span>1:45 PM</span></li>
 										</ul>
-										<h4>Duis feugiat neque sed dolor cursus, sed lacinia nisl pretium.</h4>
+										<h4>SOFT GINGERBREAD COOKIES WITH MAPLE GLAZE</h4>
 									</div>
 								</div>
 							</div>
@@ -290,8 +291,7 @@
 								<li class="list-inline-item"><a href="#">Drink</a></li>
 								<li class="list-inline-item"><a href="#">Nature</a></li>
 								<li class="list-inline-item"><a href="#">Italian</a></li>
-								<li class="list-inline-item"><a href="#">Bootstrap4</a></li>
-								<li class="list-inline-item"><a href="#">Fashion</a></li>
+								<li class="list-inline-item" style="padding-top: 10px;"><a href="#">Continental</a></li>
 							</ul>
 						</div>
 					</div>
@@ -320,7 +320,7 @@
 					<div class="overflow-hidden">
 						<h4>Email</h4>
 						<p class="lead">
-							ldr9901@gmail.com
+							cnd9901@gmail.com
 						</p>
 					</div>
 				</div>
@@ -344,7 +344,8 @@
 			<div class="row">
 				<div class="col-lg-3 col-md-6">
 					<h3>About Us</h3>
-					<p>Integer cursus scelerisque ipsum id efficitur. Donec a dui fringilla, gravida lorem ac, semper magna. Aenean rhoncus ac lectus a interdum. Vivamus semper posuere dui.</p>
+					<p>Come & Devour is a comfort food outlet in Budharaja, Sambalpur fueled by the passion to provide high quality and
+					tasty dishes to all.</p>
 				</div>
 				<div class="col-lg-3 col-md-6">
 					<h3>Subscribe</h3>
@@ -367,7 +368,7 @@
 					<h3>Contact information</h3>
 					<p class="lead">Budharaja, Sambalpur, Odisha, Inida</p>
 					<p class="lead"><a href="#">+91 7845902201</a></p>
-					<p><a href="#"> ldr9901@gmail.com</a></p>
+					<p><a href="#"> cnd9901@gmail.com</a></p>
 				</div>
 				<div class="col-lg-3 col-md-6">
 					<h3>Opening hours</h3>
@@ -383,11 +384,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12">
-						<p class="company-name">All Rights Reserved. &copy; 2021||2022 <a href="#">Live Dinner Restaurant</a>
-					<!-- <a href="https://www.youtube.com/channel/GNVFUN -->
-					>
-	
-						</a></p>
+						<p class="company-name">All Rights Reserved. &copy; 2021||2022 <a href="#">Come & Devour Restaurant</a></p>
 					</div>
 				</div>
 		</div>
@@ -396,6 +393,13 @@
 	<!-- End Footer -->
 	
 	<a href="#" id="back-to-top" title="Back to top" style="display: none;"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></a>
+	<script>
+	function sendmessage(){
+	var message = "Your message has been send successfully."
+	$('#alert_placeholder').html('<div class="alert alert-success"><a class="close" data-dismiss="alert">×</a><span>' +
+			message + '</span></div>')
+	}
+	</script>
 
 	<!-- ALL JS FILES -->
 	<script src="js/jquery-3.2.1.min.js"></script>

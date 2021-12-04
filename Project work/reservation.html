@@ -79,6 +79,7 @@
 	<!-- Start Reservation -->
 	<div class="reservation-box">
 		<div class="container">
+			<div id="alert_placeholder"></div>
 			<div class="row">
 				<div class="col-lg-12 col-sm-12 col-xs-12">
 					<div class="contact-block">
@@ -88,13 +89,13 @@
 									<h3>Book a table</h3>
 									<div class="col-md-12">
 										<div class="form-group">
-											<input id="input_date" class="datepicker picker__input form-control" name="date" type="text" value="" equired data-error="Please enter Date">
+											<input id="input_date" placeholder="Date" class="datepicker picker__input form-control" name="date" type="text" value="" equired data-error="Please enter Date">
 											<div class="help-block with-errors"></div>
 										</div>                                 
 									</div>
 									<div class="col-md-12">
 										<div class="form-group">
-											<input id="input_time" class="time form-control picker__input" required data-error="Please enter time">
+											<input id="input_time" placeholder="Time" class="time form-control picker__input" required data-error="Please enter time">
 											<div class="help-block with-errors"></div>
 										</div>                                 
 									</div>
@@ -137,7 +138,7 @@
 								</div>
 								<div class="col-md-12">
 									<div class="submit-button text-center">
-										<button class="btn btn-common" id="submit" type="submit" href="thank-you.html">Book Table</button>
+										<button class="btn btn-common" id="submit" type="submit" href="thank-you.html" onclick="bookTable()">Book Table</button>
 										<div id="msgSubmit" class="h3 text-center hidden"></div> 
 										<div class="clearfix"></div> 
 									</div>
@@ -245,6 +246,13 @@
 	<!-- End Footer -->
 	
 	<a href="#" id="back-to-top" title="Back to top" style="display: none;"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></a>
+
+	<script>
+		function bookTable() {
+			var message = "Your table has been booked successfully."
+			$('#alert_placeholder').html('<div class="alert alert-success"><a class="close" data-dismiss="alert">×</a><span>' + message + '</span></div>')
+		}
+	</script>
 
 	<!-- ALL JS FILES -->
 	<script src="js/jquery-3.2.1.min.js"></script>
