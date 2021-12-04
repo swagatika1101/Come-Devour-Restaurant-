@@ -1401,6 +1401,8 @@ blockquote {
 .shop-item-image {
     height: 300px;
     width: 300px;
+    border-radius: 12px;
+    box-shadow: 7px 7px 5px #ccc;
 }
 
 .shop-item-details {
