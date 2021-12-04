@@ -1407,11 +1407,14 @@ blockquote {
     display: flex;
     align-items: center;
     padding: 5px;
+    padding-top: 30px;
 }
 
 .shop-item-price {
     flex-grow: 1;
     color: #333;
+    font-size: 20px;
+    font-weight: 500;
 }
 
 .shop-items {
@@ -1419,7 +1422,17 @@ blockquote {
     flex-wrap: wrap;
     justify-content: space-around;
 }
-
+.shop-item-button{
+    background-color: #d65106;
+    padding: 10px 12px 10px 12px;
+    font-size: 15px;
+    font-weight: 500;
+}
+.shop-item-button:hover{
+    background-color: white;
+    border: 1px solid #d65106;
+    color: black;
+}
 .cart-header {
     font-weight: bold;
     font-size: 1.25em;
@@ -1518,8 +1531,11 @@ blockquote {
 
 .btn-purchase {
     display: block;
-    margin: 40px auto 80px auto;
+    margin: 50px auto 50px auto;
     font-size: 1.75em;
+    background-color: #d65106;
+    padding: 12px 20px 12px 20px;
+    font-weight: 500;
 }
 
 
