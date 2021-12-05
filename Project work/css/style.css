@@ -439,7 +439,12 @@ button:focus{
     -webkit-box-shadow: 0 0 10px #ccc;
     box-shadow: 0 0 10px #ccc;
 }
-
+.drinks .gallery-single .img-fluid{
+    height: 170px;
+}
+.lunch .gallery-single .img-fluid{
+    height: 170px;
+}
 .why-text {
     position: absolute;
     left: 0;

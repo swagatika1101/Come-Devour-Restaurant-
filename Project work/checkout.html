@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en"><!-- Basic -->
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+     <!-- Site Metas -->
+    <title>Come & Devour Restaurant</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- Site CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+	<style>
+		.logo{
+			width: 150%;
+			height: 150%;
+		}
+   form{
+       text-align: center;
+       font-size: 20px;
+       border: 2px solid black;
+       width: 650px;
+       margin: 50px auto;
+       height: 400px;
+       background-color: white;
+       border-radius: 5px;
+       padding: 50px;
+
+   }
+    h1{
+        margin-top: 100px;
+        text-align: center;
+        font-size: 30px;
+        font-weight: 500;
+    }
+    input[type="text"],input[type="tel"]{
+        width:200px;
+        height: 30px;
+        position: relative;
+        left: 10px;
+        }
+
+        textarea{
+        width:200px;
+        height: 70px;
+        position: relative;
+        left: 10px;
+        }
+
+        button{
+            margin-top: 30px;
+        }
+	</style>
+
+</head>
+<body>
+    <div>
+    <h1>Enter Your Details</h1>
+    <div id="alert_placeholder"></div>
+            <form id ="insform">
+                Name:<input type="text" id="name" name="firstname" required><br>
+                Contact Number:<input type="tel" id="phonenumber" name="number" maxlength="10" required><br>
+                Address:<textarea id="Address" rows="2" cols="30" required></textarea><br>
+				<button class="btn btn-common" id="submit" href="checkout.html" onclick="order()">Order Now</button>
+            </form>
+            </div>
+    <script>
+		function order(e) {
+            e.preventDefault();
+			var message = "Your order has been booked successfully."
+			$('#alert_placeholder').html('<div class="alert alert-success"><a class="close" data-dismiss="alert">×</a><span>' + message + '</span></div>')
+		}
+	</script>
+</body>
+</html>
